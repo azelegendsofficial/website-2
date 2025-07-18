@@ -233,8 +233,7 @@ Untuk order atau pertanyaan lebih lanjut, hubungi admin!
 
     <script>
         function toggleEditor() {
-            const panel = document.getElementById('editorPanel');
-            panel.classList.toggle('active');
+            alert('KAMU TIDAK MEMILIKI PERMISSION UNTUK MENGEDIT HALAMAN INI!!!');
         }
 
         function addText() {
@@ -360,7 +359,7 @@ Terima kasih!`);
         document.addEventListener('keydown', function(e) {
             if (e.ctrlKey && e.key === 'e') {
                 e.preventDefault();
-                toggleEditor();
+                alert('KAMU TIDAK MEMILIKI PERMISSION UNTUK MENGEDIT HALAMAN INI!!!');
             }
         });
     </script>
