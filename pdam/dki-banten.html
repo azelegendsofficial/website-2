@@ -150,53 +150,59 @@ Cek list di bawah ini ya!
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM1**
 `Bayar PDAM Jakarta AETRA`
-`Biaya Layanan: -Rp 500`
+`Biaya Layanan: Rp 500`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM2**
 `Bayar PDAM Jakarta PALYJA`
-`Biaya Layanan: -Rp 500`
+`Biaya Layanan: Rp 500`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM70**
 `Bayar PDAM Kab. Tangerang`
-`Biaya Layanan: -Rp 200`
+`Biaya Layanan: Rp 200`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM89**
 `Bayar PDAM Kab. Lebak`
-`Biaya Layanan: -Rp 500`
+`Biaya Layanan: Rp 500`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM91**
 `Bayar PDAM Kab. Serang`
-`Biaya Layanan: -Rp 300`
+`Biaya Layanan: Rp 300`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM163**
 `Bayar PDAM Kota Tangerang`
-`Biaya Layanan: -Rp 250`
+`Biaya Layanan: Rp 250`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM181**
 `Bayar Tagihan PDAM AETRA Kab. Tangerang`
-`Biaya Layanan: -Rp 400`
+`Biaya Layanan: Rp 400`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM193**
 `Bayar PDAM Kota Cilegon`
-`Biaya Layanan: -Rp 600`
+`Biaya Layanan: Rp 600`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
 
 &lt;pdam_logo:123456789012345678&gt; **BYRPDAM208**
 `Bayar PDAM Kab Pandeglang`
-`Biaya Layanan: -Rp 200`
+`Biaya Layanan: Rp 200`
 Status: </span><span class="status-indicator"></span><span class="green-text">Open</span><span class="white-text">
+
+---
+
+**INFORMASI HARGA:**
+• Biaya Admin: Rp 5.000
+• Total Harga: Harga layanan + Rp 5.000
 
 **Catatan:** Harga dapat berubah sewaktu-waktu.
 Untuk order atau pertanyaan lebih lanjut, hubungi admin!
 
-[Order: </span><span class="url-link" onclick="openUrl('https://wa.me/27683866694')">https://wa.me/27683866694</span><span class="white-text">]
+[</span><span class="url-link" onclick="orderViaWhatsApp()">Klick Untuk Order</span><span class="white-text">]
 [</span><span class="url-link" onclick="openUrl('https://bkstore.zapto.org/license.html')">https://bkstore.zapto.org/license.html</span><span class="white-text">]
 [Powered By: BK STORE]</span>
     </div>
@@ -271,6 +277,30 @@ Untuk order atau pertanyaan lebih lanjut, hubungi admin!
                 urlInput.value = '';
                 urlText.value = '';
             }
+        }
+
+        function orderViaWhatsApp() {
+            const message = encodeURIComponent(`Halo Admin BK STORE!
+
+Saya ingin order layanan PDAM dengan detail berikut:
+
+📋 LAYANAN YANG TERSEDIA:
+• PDAM Jakarta AETRA (Rp 500 + Admin Rp 5.000 = Rp 5.500)
+• PDAM Jakarta PALYJA (Rp 500 + Admin Rp 5.000 = Rp 5.500)
+• PDAM Kab. Tangerang (Rp 200 + Admin Rp 5.000 = Rp 5.200)
+• PDAM Kab. Lebak (Rp 500 + Admin Rp 5.000 = Rp 5.500)
+• PDAM Kab. Serang (Rp 300 + Admin Rp 5.000 = Rp 5.300)
+• PDAM Kota Tangerang (Rp 250 + Admin Rp 5.000 = Rp 5.250)
+• PDAM AETRA Kab. Tangerang (Rp 400 + Admin Rp 5.000 = Rp 5.400)
+• PDAM Kota Cilegon (Rp 600 + Admin Rp 5.000 = Rp 5.600)
+• PDAM Kab Pandeglang (Rp 200 + Admin Rp 5.000 = Rp 5.200)
+
+Layanan yang saya pilih: [Silakan pilih]
+Nomor pelanggan: [Isi nomor pelanggan]
+
+Terima kasih!`);
+            
+            window.open(`https://wa.me/27683866094?text=${message}`, '_blank');
         }
 
         function openUrl(url) {
